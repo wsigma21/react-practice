@@ -1,12 +1,27 @@
+import { useState } from "react";
 import { ColorMessage } from "./components/ColorMessage";
+
 export const App = () => {
-  const contentPinkStyle = {
-    color: "pink",
-    fontSize: "30px"
-  }
+  const [num, setNum] = useState(0);
+  const onClickIncement = () => {
+    // setNum(num + 1);
+    // setNum(num + 1);
+    setNum((num) => num + 1);
+    setNum((num) => num + 1);
+  };
+  const onClickReset = () => setNum(0);
   return (
     <>
-      <ColorMessage color={contentPinkStyle.color} fontSize={contentPinkStyle.fontSize}/>
+      <h1>こんにちは！</h1>
+      <ColorMessage color={"pink"} fontSize={"30px"}>
+        元気ですか？
+      </ColorMessage>
+      <ColorMessage color={"red"} fontSize={"15px"}>
+        もちろん元気です！
+      </ColorMessage>
+      <button onClick={onClickIncement}>+1</button>
+      <p>{num}</p>
+      <button onClick={onClickReset}>リセット</button>
     </>
   );
 };

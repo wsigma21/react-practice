@@ -1,11 +1,12 @@
 export const ColorMessage = (props) => {
-  const {color, fontSize} = props;
-  const onClickButton = () => alert();
+  const { color, fontSize, children } = props;
+  const pStyle = {
+    color,
+    fontSize
+  }
   return (
     <>
-      <h1>こんにちは！</h1>
-      <p style={{color, fontSize}}>お元気ですか</p>
-      <button onClick={onClickButton}>ボタン</button>
+      <p style={pStyle}>{children}</p>
     </>
   )
 }
