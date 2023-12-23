@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { ColorMessage } from "./components/ColorMessage";
+import { TailWindCss } from "./components/TailwindCss";
+import './index.css';
 
 export const App = () => {
   const [num, setNum] = useState(0);
@@ -12,7 +14,7 @@ export const App = () => {
   const onClickReset = () => setNum(0);
   return (
     <>
-      <h1>こんにちは！</h1>
+      <h1 className="text-3xl font-bold underline">Hello world!</h1>
       <ColorMessage color={"pink"} fontSize={"30px"}>
         元気ですか？
       </ColorMessage>
@@ -22,6 +24,7 @@ export const App = () => {
       <button onClick={onClickIncement}>+1</button>
       <p>{num}</p>
       <button onClick={onClickReset}>リセット</button>
+      <TailWindCss />
     </>
   );
 };
