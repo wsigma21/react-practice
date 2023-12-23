@@ -1,12 +1,13 @@
-import { useState } from "react";
 import './index.css';
 // import { TailWindCss } from "./components/TailwindCss";
 // import { Message } from "./components/Message";
 // import { CountApp } from "./components/CountApp";
-import { Card } from "./components/Card"
+import { useContext } from "react";
+import { Card } from "./components/Card";
+import { AdminFlagContext } from "./components/providers/AdminFlagProvider";
 
 export const App = () => {
-  const [isAdmin, setIsAdmin] = useState(false);
+  const {isAdmin, setIsAdmin} = useContext(AdminFlagContext);
   const onClickSwitch = () => setIsAdmin(!isAdmin);
 
   return (
