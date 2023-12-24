@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/react-practice/static/css/main.183ee7d3.css",
-    "main.js": "/react-practice/static/js/main.a953524e.js",
-    "index.html": "/react-practice/index.html",
-    "main.183ee7d3.css.map": "/react-practice/static/css/main.183ee7d3.css.map",
-    "main.a953524e.js.map": "/react-practice/static/js/main.a953524e.js.map"
+    "main.css": "/react-practice/IntermediateUdemy/practice1/static/css/main.183ee7d3.css",
+    "main.js": "/react-practice/IntermediateUdemy/practice1/static/js/main.a953524e.js",
+    "index.html": "/react-practice/IntermediateUdemy/practice1/index.html",
+    "main.183ee7d3.css.map": "/react-practice/IntermediateUdemy/practice1/static/css/main.183ee7d3.css.map",
+    "main.a953524e.js.map": "/react-practice/IntermediateUdemy/practice1/static/js/main.a953524e.js.map"
   },
   "entrypoints": [
     "static/css/main.183ee7d3.css",

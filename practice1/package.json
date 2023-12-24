@@ -1,5 +1,5 @@
 {
-  "homepage": "https://wsigma21.github.io/react-practice/parctice1",
+  "homepage": "https://wsigma21.github.io/react-practice/IntermediateUdemy/practice1",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -17,8 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "rm -rf docs && npm run build && mv build docs"
   },
   "eslintConfig": {
     "extends": [
